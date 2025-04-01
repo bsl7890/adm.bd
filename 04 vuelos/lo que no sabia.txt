@@ -1,0 +1,16 @@
+El campo deleted se usa para implementar un borrado lógico en lugar de eliminar registros físicamente de la base de datos.
+
+Valores posibles:
+
+0 → El registro está activo.
+
+1 → El registro está eliminado (o inactivo).
+
+
+El campo id_usuario indica quién creó o modificó el registro. Esto se usa para:
+
+Auditoría: Saber qué usuario hizo cambios en los datos.
+
+Seguridad: Restringir accesos basados en permisos de usuario.
+
+Filtrado de datos: Un usuario puede ver solo los datos que ha registrado.
